@@ -1,0 +1,168 @@
+import random
+from colorama import Fore, Back, Style
+#creates the board depending on the size
+def createComputerField(size):
+    
+    computerField = [["0 "] * size for i in range(size)]
+    return computerField
+#Creates the users field
+def createUserField(size):
+    
+    userField = [["0 "] * size for i in range(size)]
+    return userField
+
+#prints the user's board in a pretty little format
+def printUserField(userField):
+    size = len(userField)
+    border = "-" * (size * 4)
+    rows = f"\n {border}\n"
+
+    for i in range(size):
+        rows += f"| {'| '.join(userField[i])}|\n{border}\n"
+    
+    print(rows)
+
+#same as above but for the computer
+def printComputerField(computerField):
+    size = len(computerField)
+    border = "-" * (size * 4)
+    rows = f"\n {border}\n"
+
+    for i in range(size):
+        rows += f"| {'| '.join(computerField[i])}|\n{border}\n"
+    
+    print(rows)
+#starts the game
+def manipulateField(userField, size, computerField):
+    moveList = []
+    computerMoveList = []
+
+#places the ship
+    ask = True
+    while ask:
+            placement = input("Do you want to place a ship (Y) or the computer (N)? ")
+            if placement.capitalize() == "N":
+                computerShipRow = random.randint(0,size - 1)
+                computerShipCol = random.randint(0,size - 1)
+                break
+            elif placement.capitalize() == "Y":
+                try:
+                    shipRow1 = int(input("what row would you like the ship to be on 1-size? "))
+                    shipCol1 = int(input("what column would you like the ship to be on 1-size? "))
+                    if 0 < shipRow1 <= size and 0 < shipCol1 <= size:
+                        computerShipCol = shipCol1 - 1
+                        computerShipRow = shipRow1 - 1
+                        ask = False
+                    else:
+                        print("This space does not exist in the field you chose.")
+                        ask = True
+                except:
+                    print("Please enter an integer")
+                    ask = True
+
+    shipRow = random.randint(0, size - 1)
+    shipCol = random.randint(0, size - 1)
+
+#This shoots at the ships and decides whether its a hit or miss
+    counter = 0
+    playing = True
+    while playing:
+        print("This is the computers sea, try to hit their ship. Hits will be marked with a 🔥 and misses will be marked with a ⛔.")
+        printUserField(userField)
+
+        shooting = True
+        while shooting:
+            try:  
+                rowAttempt1 = int(input("Enter the row of your shot (1-size): "))
+                colAttempt1 = int(input("Enter the column of your shot (1-size): "))
+                if 0 < rowAttempt1 <= size and 0 < colAttempt1 <= size:
+                    rowAttempt = rowAttempt1 - 1
+                    colAttempt = colAttempt1 - 1
+                    shot = rowAttempt,colAttempt
+                    if shot in moveList:
+                        print("You have already shot this area, please select a different place.")
+                        shooting = True
+                    else:
+                        shooting = False
+
+                else:
+                    print("This space does not exist in the field you chose.")
+                    shooting = True
+            except:
+                print("Please enter an integer")
+                shooting = True
+        moveList.append(shot)
+        print(moveList)
+#hit
+        if rowAttempt == shipRow and colAttempt == shipCol:
+            userField[rowAttempt][colAttempt] = "🔥 "
+            printUserField(userField)
+            print(Fore.GREEN + "Ship sunk, you win!!!")
+            print(Fore.RESET)
+            playing = False
+
+        elif rowAttempt > size or colAttempt > size:
+            print("Please enter a valid space")
+
+        else:
+            userField[rowAttempt][colAttempt] = "⛔ "
+            counter += 1
+#you took too many tries            
+        if counter == 5:
+            print(Fore.RED + "Sorry you have reached 5 shots, you lose.")
+            print(Fore.RESET)
+            playing = False
+        computerField[computerShipRow][computerShipCol] = "🚤 "
+        print("This is your ship represented by 🚤")
+        printComputerField(computerField)
+#this is the computers shots
+        shipping = True
+        while shipping:
+            computerRowAttempt1 = random.randint(1, size)
+            computerColAttempt1 = random.randint(1, size)
+            computerRowAttempt = computerRowAttempt1 - 1
+            computerColAttempt = computerColAttempt1 - 1
+            computerShot = computerRowAttempt,computerColAttempt
+            if computerShot in computerMoveList:
+                shipping = True
+            else:
+                computerMoveList.append(computerShot)
+                print(computerShot)
+                shipping = False
+
+        if computerRowAttempt == computerShipRow and computerColAttempt == computerShipCol:
+            computerField[computerRowAttempt][computerColAttempt]
+            printComputerField(computerField)
+            print(Fore.RED + "The Computer sank your ship, you lose.")
+            print(Fore.RESET)
+            playing = False
+        else:
+            print("This is the computers attempts.")
+            computerField[computerRowAttempt][computerColAttempt] = "😂 "
+            printComputerField(computerField)
+
+
+
+
+def main():
+
+#this runs the program with all the functions and determines board size
+    while True:
+        try:
+           size = int(input("What size do you want your board to be 1-52? (ex: 4x4 = 4, 8x8 = 8, 3x3 = 3) "))
+           if size == 0:
+               print ("You can't have a board with 0 spaces.")
+               continue
+           if size > 52:
+               print("That's too big")
+               continue
+           else:
+               break
+        except:
+            print("Please enter a valid integer.")
+
+    field = createUserField(size)
+    computerField = createComputerField(size)
+    manipulateField(field, size, computerField)
+
+main()
