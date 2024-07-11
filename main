@@ -36,15 +36,30 @@ def printComputerField(computerField):
 def manipulateField(userField, size, computerField):
     moveList = []
     computerMoveList = []
+    shipList = []
+    ship2List = []
 
 #places the ship
     ask = True
     while ask:
             placement = input("Do you want to place a ship (Y) or the computer (N)? ")
             if placement.capitalize() == "N":
-                computerShipRow = random.randint(0,size - 1)
-                computerShipCol = random.randint(0,size - 1)
-                break
+                try:
+                    computerShipRow = random.randint(0,size - 2)
+                    computerShipCol = random.randint(0,size - 2)
+                    computerShipRow2 = computerShipRow + 1
+                    computerShipCol2 = computerShipCol
+                    computerShip2Row = random.randint(0, size - 2)
+                    computerShip2Col = random.randint(0, size - 2)
+                    computerShip2Row2 = computerShip2Row
+                    computerShip2Col2 = computerShip2Col + 1
+                    shipList.append((computerShipRow, computerShipCol, computerShipRow2, computerShipCol2))
+                    shipList.append((computerShip2Row, computerShip2Col, computerShip2Row2, computerShip2Col2))
+
+                    ask = False
+                except:
+                    print("out of bounds or somethinf (frogs ar ecool)")
+                    ask = True
             elif placement.capitalize() == "Y":
                 try:
                     shipRow1 = int(input("what row would you like the ship to be on 1-size? "))
@@ -62,6 +77,14 @@ def manipulateField(userField, size, computerField):
 
     shipRow = random.randint(0, size - 1)
     shipCol = random.randint(0, size - 1)
+    shipRow2 = shipRow + 1
+    shipCol2 = shipCol
+    ship2Row = random.randint(0, size - 2)
+    ship2Col = random.randint(0, size - 2)
+    ship2Row2 = ship2Row
+    ship2Col2 = ship2Col + 1
+    ship2List.append((shipRow, shipCol, shipRow2, shipCol2))
+    ship2List.append((ship2Row, ship2Col, ship2Row2, ship2Col2))
 
 #This shoots at the ships and decides whether its a hit or miss
     counter = 0
@@ -69,7 +92,8 @@ def manipulateField(userField, size, computerField):
     while playing:
         print("This is the computers sea, try to hit their ship. Hits will be marked with a 🔥 and misses will be marked with a ⛔.")
         printUserField(userField)
-
+        print(ship2List)
+        # print(shipList)
         shooting = True
         while shooting:
             try:  
@@ -78,7 +102,7 @@ def manipulateField(userField, size, computerField):
                 if 0 < rowAttempt1 <= size and 0 < colAttempt1 <= size:
                     rowAttempt = rowAttempt1 - 1
                     colAttempt = colAttempt1 - 1
-                    shot = rowAttempt,colAttempt
+                    shot = (rowAttempt,colAttempt)
                     if shot in moveList:
                         print("You have already shot this area, please select a different place.")
                         shooting = True
@@ -94,28 +118,39 @@ def manipulateField(userField, size, computerField):
         moveList.append(shot)
         print(moveList)
 #hit
-        if rowAttempt == shipRow and colAttempt == shipCol:
-            userField[rowAttempt][colAttempt] = "🔥 "
-            printUserField(userField)
-            print(Fore.GREEN + "Ship sunk, you win!!!")
-            print(Fore.RESET)
-            playing = False
+        for ship in shipList:
+            if (ship[0], ship[1]) in moveList:
+                userField[rowAttempt][colAttempt] = "🔥 "
+        for ship in shipList:
+            if (ship[0], ship[1]) in moveList and (ship[2], ship[3]) in moveList:
+                printUserField(userField)
+                print(Fore.GREEN + "Ship sunk!!!")
+                print(Fore.RESET)
 
-        elif rowAttempt > size or colAttempt > size:
+
+        if rowAttempt > size or colAttempt > size:
             print("Please enter a valid space")
 
         else:
             userField[rowAttempt][colAttempt] = "⛔ "
             counter += 1
 #you took too many tries            
-        if counter == 5:
-            print(Fore.RED + "Sorry you have reached 5 shots, you lose.")
-            print(Fore.RESET)
-            playing = False
-        computerField[computerShipRow][computerShipCol] = "🚤 "
-        print("This is your ship represented by 🚤")
-        printComputerField(computerField)
-#this is the computers shots
+        # if counter == 5:
+        #     print(Fore.RED + "Sorry you have reached 5 shots, you lose.")
+        #     print(Fore.RESET)
+        #     playing = False
+        while True:
+            try:
+                computerField[computerShipRow][computerShipCol] = "🚤"
+                computerField[computerShipRow2][computerShipCol2] = "🚤"
+                computerField[computerShip2Row][computerShip2Col] = "🚤"
+                computerField[computerShip2Row2][computerShip2Col2] = "🚤"
+                print("This is your ship represented by 🚤")
+                printComputerField(computerField)
+                break
+            except:
+                True
+    #this is the computers shots
         shipping = True
         while shipping:
             computerRowAttempt1 = random.randint(1, size)
@@ -131,11 +166,13 @@ def manipulateField(userField, size, computerField):
                 shipping = False
 
         if computerRowAttempt == computerShipRow and computerColAttempt == computerShipCol:
-            computerField[computerRowAttempt][computerColAttempt]
-            printComputerField(computerField)
-            print(Fore.RED + "The Computer sank your ship, you lose.")
-            print(Fore.RESET)
-            playing = False
+            computerField[computerRowAttempt][computerColAttempt] = "🔥 "
+            for ship in ship2List:
+                if (ship[0], ship[1]) in computerMoveList and (ship[2], ship[3]) in computerMoveList:
+                    printComputerField(computerField)
+                    print(Fore.RED + "The computer sank your ship")
+                    print(Fore.RESET)
+
         else:
             print("This is the computers attempts.")
             computerField[computerRowAttempt][computerColAttempt] = "😂 "
