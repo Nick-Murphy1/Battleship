@@ -53,12 +53,14 @@ def manipulateField(userField, size, computerField):
                     computerShip2Col = random.randint(0, size - 2)
                     computerShip2Row2 = computerShip2Row
                     computerShip2Col2 = computerShip2Col + 1
-                    shipList.append((computerShipRow, computerShipCol, computerShipRow2, computerShipCol2))
-                    shipList.append((computerShip2Row, computerShip2Col, computerShip2Row2, computerShip2Col2))
+                    shipList.append((computerShipRow, computerShipCol))
+                    shipList.append((computerShipRow2, computerShipCol2))
+                    ship2List.append((computerShip2Row, computerShip2Col))
+                    ship2List.append((computerShip2Row2, computerShip2Col2))
 
                     ask = False
                 except:
-                    print("out of bounds or somethinf (frogs ar ecool)")
+                    print("out of bounds or something (it's broken)")
                     ask = True
             elif placement.capitalize() == "Y":
                 try:
@@ -117,37 +119,41 @@ def manipulateField(userField, size, computerField):
                 shooting = True
         moveList.append(shot)
         print(moveList)
-#hit                  This is actually so broken lol
-        # for ship in shipList:
-        thisdoesntworkatall = True
-        while thisdoesntworkatall:
-            if (shipList[0], shipList[1]) in moveList:
+#hit 
+
+        hitting = True
+        while hitting:
+            if moveList[-1] in shipList:
                 userField[rowAttempt][colAttempt] = "🔥 "
-                thisdoesntworkatall = False
+                printUserField(userField)
+                hitting = False
+            elif moveList[-1] in ship2List:
+                userField[rowAttempt][colAttempt] = "🔥 "
+                printUserField(userField)
+                hitting = False
+
             else:
                 userField[rowAttempt][colAttempt] = "⛔ "
+                printUserField(userField)
                 counter += 1
-                thisdoesntworkatall = False
+                hitting = False
 
                     # break
-        for ship in shipList:
-            if (ship[0], ship[1]) in moveList and (ship[2], ship[3]) in moveList:
-                printUserField(userField)
-                print(Fore.GREEN + "Ship sunk!!!")
-                print(Fore.RESET)
+        # for ship in shipList:
+        #     if (ship[0], ship[1]) in moveList and (ship[2], ship[3]) in moveList:
+        #         printUserField(userField)
+        #         print(Fore.GREEN + "Ship sunk!!!")
+        #         print(Fore.RESET)
 
 
         if rowAttempt > size or colAttempt > size:
             print("Please enter a valid space")
 
-        #else:
-        #    userField[rowAttempt][colAttempt] = "⛔ "
-        #    counter += 1
 #you took too many tries            
-        # if counter == 5:
-        #     print(Fore.RED + "Sorry you have reached 5 shots, you lose.")
-        #     print(Fore.RESET)
-        #     playing = False
+        if counter == 5:
+            print(Fore.RED + "Sorry you have reached 5 shots, you lose.")
+            print(Fore.RESET)
+            playing = False
         while True:
             try:
                 computerField[computerShipRow][computerShipCol] = "🚤"
