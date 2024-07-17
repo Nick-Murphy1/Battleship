@@ -276,7 +276,7 @@ def main():
     from colorama import Fore, Style
     import time
     import sys
-    import playsound
+    import winsound
 
     print("\n"*10)
     print("                                                               # #  ( )")
@@ -362,10 +362,9 @@ def main():
     print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
     time.sleep(.3)
     os.system('cls' if os.name == 'nt' else 'clear')
-    import pygame, sys, time
-
- 
     
+    import winsound 
+    winsound.PlaySound('Welcome.wav', winsound.SND_FILENAME)
 
     print("\n"*10)
     print("                                     _                                  ")
@@ -685,8 +684,10 @@ def main():
                 sys.stdout.write(char)
                 sys.stdout.flush()
 
-
+    
     print_fast("Would you like to play...")
+    if
+            
 
     print("")
     #this runs the program with all the functions and determines board size
