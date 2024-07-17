@@ -1,269 +1,173 @@
+
 import random
 from colorama import Fore, Back, Style
-#creates the board depending on the size
-def createComputerField(size):
-    
-    computerField = [["0 "] * size for i in range(size)]
-    return computerField
-#Creates the users field
-def createUserField(size):
-    
-    userField = [["0 "] * size for i in range(size)]
-    return userField
 
-#prints the user's board in a pretty little format
-def printUserField(userField):
-    size = len(userField)
+# Creates the board depending on the size
+def createField(size):
+    return [["0 "] * size for _ in range(size)]
+
+# Prints the user's board in a pretty little format
+def printField(field):
+    size = len(field)
     border = "-" * (size * 4)
     rows = f"\n {border}\n"
-
     for i in range(size):
-        rows += f"| {'| '.join(userField[i])}|\n{border}\n"
-    
+        rows += f"| {'| '.join(field[i])}|\n{border}\n"
     print(rows)
 
-#same as above but for the computer
-def printComputerField(computerField):
-    size = len(computerField)
-    border = "-" * (size * 4)
-    rows = f"\n {border}\n"
-
-    for i in range(size):
-        rows += f"| {'| '.join(computerField[i])}|\n{border}\n"
-    
-    print(rows)
-#starts the game
-def manipulateField(userField, size, computerField):
+# Starts the game
+def manipulateField(player, computer, size):
     moveList = []
     computerMoveList = []
-    shipList = []
-    ship2List = []
-    computerShipList = []
-    computerShip2List = []
 
-#places the ship
-    ask = True
-    while ask:
-            placement = input("Do you want to place a ship (Y) or the computer (N)? ")
-            if placement.capitalize() == "N":
-                ask = False
-                open1 = True
-                while open1:
-                    shipRow = random.randint(0,size - 2)
-                    shipCol = random.randint(0,size - 1)
-                    shipRow2 = shipRow + 1
-                    shipCol2 = shipCol
-                    ship2Row = random.randint(0, size - 1)
-                    ship2Col = random.randint(0, size - 2)
-                    ship2Row2 = ship2Row
-                    ship2Col2 = ship2Col + 1
-                    if shipRow == ship2Row and shipCol == ship2Col:
-                        open1 = True
-                    elif shipRow2 == ship2Row and shipCol2 == ship2Col:
-                        open1 = True
-                    elif shipRow == ship2Row2 and shipCol == ship2Col2:
-                        open1 = True
-                    elif shipRow2 == ship2Row2 and shipCol2 == ship2Col2:
-                        open1 = True
-                    else:
-                        shipList.append((shipRow, shipCol))
-                        shipList.append((shipRow2, shipCol2))
-                        ship2List.append((ship2Row, ship2Col))
-                        ship2List.append((ship2Row2, ship2Col2))
-                        open1 = False
-            elif placement.capitalize() == "Y":
-                try:
-                    asking = True
-                    while asking:
-                        shipRow = int(input("what row would you like the vertical ship to be on 1-size? ")) - 1
-                        shipCol = int(input("what column would you like the vertical ship to be on 1-size? ")) - 1
-                        shipRow2 = shipRow + 1
-                        shipCol2 = shipCol
-                        ship2Row = int(input("what row would you like the horizontal ship to be on 1-size? ")) - 1
-                        ship2Col = int(input("what column would you like the horizontal ship to be on 1-size? ")) - 1
-                        ship2Row2 = ship2Row
-                        ship2Col2 = ship2Col + 1
-                        if shipRow > size - 1 or shipCol > size or shipRow2 > size or shipCol2 > size or ship2Row > size or ship2Col > size - 1 or ship2Row2 > size or ship2Col2 > size:
-                            print("Your ship is out of bounds please try again.")
-                            asking = True
-                        elif shipRow == ship2Row and shipCol == ship2Col:
-                            print("You cannot enter the same space as another ship.")
-                            asking = True
-                        elif shipRow2 == ship2Row and shipCol2 == ship2Col:
-                            print("You cannot enter the same space as another ship.")
-                            asking = True
-                        elif shipRow == ship2Row2 and shipCol == ship2Col2:
-                            print("You cannot enter the same space as another ship.")
-                            asking = True
-                        elif shipRow2 == ship2Row2 and shipCol2 == ship2Col2:
-                            print("You cannot enter the same space as another ship.")
-                            asking = True
-                        else:
-                            shipList.append((shipRow, shipCol))
-                            shipList.append((shipRow2, shipCol2))
-                            ship2List.append((ship2Row, ship2Col))
-                            ship2List.append((ship2Row2, ship2Col2))
-                            ask = False
-                            asking = False
-                except:
-                    print("Please enter an integer")
-                    ask = True
-    open = True
-    while open:
-        computerShipRow = random.randint(0, size - 2)
-        computerShipCol = random.randint(0, size - 1)
-        computerShipRow2 = computerShipRow + 1
-        computerShipCol2 = computerShipCol
-        computerShip2Row = random.randint(0, size - 1)
-        computerShip2Col = random.randint(0, size - 2)
-        computerShip2Row2 = computerShip2Row
-        computerShip2Col2 = computerShip2Col + 1
-        if computerShipRow == computerShip2Row and computerShipCol == computerShip2Col:
-            open = True
-        elif computerShipRow2 == computerShip2Row and computerShipCol2 == computerShip2Col:
-            open = True
-        elif computerShipRow == computerShip2Row2 and computerShipCol == computerShip2Col2:
-            open = True
-        elif computerShipRow2 == computerShip2Row2 and computerShipCol2 == computerShip2Col2:
-            open = True
-        else:
-            computerShipList.append((computerShipRow, computerShipCol))
-            computerShipList.append((computerShipRow2, computerShipCol2))
-            computerShip2List.append((computerShip2Row, computerShip2Col))
-            computerShip2List.append((computerShip2Row2, computerShip2Col2))
-            computerField[shipRow][shipCol] = "🚤"
-            computerField[shipRow2][shipCol2] = "🚤"
-            computerField[ship2Row][ship2Col] = "🚤"
-            computerField[ship2Row2][ship2Col2] = "🚤"
-            print("This is your ship represented by 🚤")
-            printComputerField(computerField)
-            open = False
+    # Places the ships
+    placeShips(player, size)
+    placeShips(computer, size, computer=True)
+    print("This is your ship represented by 🚤")
+    printField(computer['field'])
 
-#This shoots at the ships and decides whether its a hit or miss
-    ship1HitCounter = 0
-    ship2HitCounter = 0
-    computerShip1HitCounter = 0
-    computerShip2HitCounter = 0
+    # Initializes hit counters
+    player['ship1HitCounter'] = 0
+    player['ship2HitCounter'] = 0
+    computer['ship1HitCounter'] = 0
+    computer['ship2HitCounter'] = 0
+
     tryCounter = 0
     playing = True
+
     while playing:
-        print("This is the computers sea, try to hit their ship. Hits will be marked with a 🔥 and misses will be marked with a ⛔.")
-        printUserField(userField)
+        # Player's turn to shoot
+        print("This is the computer's sea. Try to hit their ship. Hits will be marked with a 🔥 and misses with a ⛔.")
+        printField(player['field'])
         shooting = True
         while shooting:
-            try:  
+            try:
                 rowAttempt1 = int(input("Enter the row of your shot (1-size): "))
                 colAttempt1 = int(input("Enter the column of your shot (1-size): "))
                 if 0 < rowAttempt1 <= size and 0 < colAttempt1 <= size:
                     rowAttempt = rowAttempt1 - 1
                     colAttempt = colAttempt1 - 1
-                    shot = (rowAttempt,colAttempt)
+                    shot = (rowAttempt, colAttempt)
                     if shot in moveList:
-                        print("You have already shot this area, please select a different place.")
+                        print("You have already shot this area. Please select a different place.")
                         shooting = True
                     else:
                         shooting = False
-
                 else:
                     print("This space does not exist in the field you chose.")
                     shooting = True
             except:
                 print("Please enter an integer")
                 shooting = True
+
         moveList.append(shot)
-        print(moveList)
-#hit 
+        handleShot(shot, computer, player, tryCounter)
 
-        hitting = True
-        while hitting:
-            if moveList[-1] in computerShipList:
-                userField[rowAttempt][colAttempt] = "🔥 "
-                printUserField(userField)
-                ship1HitCounter += 1
-                hitting = False
-            elif moveList[-1] in computerShip2List:
-                userField[rowAttempt][colAttempt] = "🔥 "
-                printUserField(userField)
-                ship2HitCounter += 1
-                hitting = False
-
-            else:
-                userField[rowAttempt][colAttempt] = "⛔ "
-                printUserField(userField)
-                tryCounter += 1
-                hitting = False
-
-        if ship1HitCounter == 2:
-            printUserField(userField)
-            print(Fore.GREEN + "Ship 1 sunk!!!")
-            print(Fore.RESET)
-        elif ship2HitCounter == 2:
-            printUserField(userField)
-            print(Fore.GREEN + "Ship 2 sunk!!!")
-            print(Fore.RESET)
-
-        if ship1HitCounter == 2 and ship2HitCounter == 2:
-            printUserField(userField)
-            print(Fore.GREEN + "both ships sunk, YOU WIN!!!!")
+        if player['ship1HitCounter'] == 2 and player['ship2HitCounter'] == 2:
+            printField(player['field'])
+            print(Fore.GREEN + "Both ships sunk, YOU WIN!!!!")
             print(Fore.RESET)
             exit()
 
-        if rowAttempt > size or colAttempt > size:
-            print("Please enter a valid space")
-
-#you took too many tries            
         if tryCounter == 5:
-            print(Fore.RED + "Sorry you have reached 5 shots, you lose.")
+            print(Fore.RED + "Sorry, you have reached 5 shots, you lose.")
             print(Fore.RESET)
             playing = False
 
+        # Computer's turn to shoot
+        computerShot(computer, player, size)
 
-    #this is the computers shots
-        shipping = True
-        while shipping:
-            computerRowAttempt1 = random.randint(1, size)
-            computerColAttempt1 = random.randint(1, size)
-            computerRowAttempt = computerRowAttempt1 - 1
-            computerColAttempt = computerColAttempt1 - 1
-            computerShot = computerRowAttempt,computerColAttempt
-            if computerShot in computerMoveList:
-                shipping = True
-            else:
-                computerMoveList.append(computerShot)
-                print(computerShot)
-                shipping = False
-        computering = True
-        while computering:
-            if computerMoveList[-1] in shipList:
-                computerField[computerRowAttempt][computerColAttempt] = "🔥 "
-                printComputerField(computerField)
-                computerShip1HitCounter += 1
-                computering = False
-            elif computerMoveList[-1] in ship2List:
-                computerField[computerRowAttempt][computerColAttempt] = "🔥 "
-                printComputerField(computerField)
-                computerShip2HitCounter += 1
-                computering = False
+def placeShips(entity, size, computer=False):
+    while True:
+        if computer:
+            shipRow = random.randint(0, size - 2)
+            shipCol = random.randint(0, size - 1)
+            shipRow2 = shipRow + 1
+            shipCol2 = shipCol
+            ship2Row = random.randint(0, size - 1)
+            ship2Col = random.randint(0, size - 2)
+            ship2Row2 = ship2Row
+            ship2Col2 = ship2Col + 1
+        else:
+            try:
+                shipRow = int(input("What row would you like the vertical ship to be on 1-size? ")) - 1
+                shipCol = int(input("What column would you like the vertical ship to be on 1-size? ")) - 1
+                shipRow2 = shipRow + 1
+                shipCol2 = shipCol
+                ship2Row = int(input("What row would you like the horizontal ship to be on 1-size? ")) - 1
+                ship2Col = int(input("What column would you like the horizontal ship to be on 1-size? ")) - 1
+                ship2Row2 = ship2Row
+                ship2Col2 = ship2Col + 1
+            except:
+                print("Please enter valid integers")
+                continue
 
-            else:
-                print("This is the computers attempts.")
-                computerField[computerRowAttempt][computerColAttempt] = "😂 "
-                printComputerField(computerField)
-                computering = False
-            if computerShip1HitCounter == 2:
-                printComputerField(computerField)
-                print(Fore.RED + "Your ship got sunk!!!")
-                print(Fore.RESET)
-            elif computerShip2HitCounter == 2:
-                printComputerField(computerField)
-                print(Fore.RED + "Your ship got sunk!!!")
-                print(Fore.RESET)
-            elif computerShip2HitCounter == 4:
-                printComputerField(computerField)
-                print(Fore.RED + "You lose, the computer sank your ships.")
-                print(Fore.RESET)
-                exit()
+        if validateShipPlacement(shipRow, shipCol, shipRow2, shipCol2, ship2Row, ship2Col, ship2Row2, ship2Col2, size):
+            entity['ships'].append((shipRow, shipCol))
+            entity['ships'].append((shipRow2, shipCol2))
+            entity['ships'].append((ship2Row, ship2Col))
+            entity['ships'].append((ship2Row2, ship2Col2))
+            entity['field'][shipRow][shipCol] = "🚤"
+            entity['field'][shipRow2][shipCol2] = "🚤"
+            entity['field'][ship2Row][ship2Col] = "🚤"
+            entity['field'][ship2Row2][ship2Col2] = "🚤"
+            break
 
+def validateShipPlacement(shipRow, shipCol, shipRow2, shipCol2, ship2Row, ship2Col, ship2Row2, ship2Col2, size):
+    if shipRow > size - 1 or shipCol > size or shipRow2 > size or shipCol2 > size or ship2Row > size or ship2Col > size - 1 or ship2Row2 > size or ship2Col2 > size:
+        print("Your ship is out of bounds, please try again.")
+        return False
+    if (shipRow, shipCol) == (ship2Row, ship2Col) or (shipRow2, shipCol2) == (ship2Row, ship2Col) or (shipRow, shipCol) == (ship2Row2, ship2Col2) or (shipRow2, shipCol2) == (ship2Row2, ship2Col2):
+        print("You cannot place ships in the same space.")
+        return False
+    return True
+
+def handleShot(shot, target, shooter, tryCounter):
+    if shot in target['ships']:
+        shooter['field'][shot[0]][shot[1]] = "🔥 "
+        printField(shooter['field'])
+        if shot in target['ships'][:2]:
+            shooter['ship1HitCounter'] += 1
+        else:
+            shooter['ship2HitCounter'] += 1
+    else:
+        shooter['field'][shot[0]][shot[1]] = "⛔ "
+        printField(shooter['field'])
+        tryCounter += 1
+
+def computerShot(computer, player, size):
+    while True:
+        computerRowAttempt = random.randint(0, size - 1)
+        computerColAttempt = random.randint(0, size - 1)
+        computerShot = (computerRowAttempt, computerColAttempt)
+        if computerShot not in computer['moves']:
+            computer['moves'].append(computerShot)
+            break
+
+    if computerShot in player['ships']:
+        computer['field'][computerRowAttempt][computerColAttempt] = "🔥 "
+        printField(computer['field'])
+        if computerShot in player['ships'][:2]:
+            computer['ship1HitCounter'] += 1
+        else:
+            computer['ship2HitCounter'] += 1
+    else:
+        computer['field'][computerRowAttempt][computerColAttempt] = "😂 "
+        printField(computer['field'])
+
+    if computer['ship1HitCounter'] == 2:
+        printField(computer['field'])
+        print(Fore.RED + "Your ship got sunk!!!")
+        print(Fore.RESET)
+    if computer['ship2HitCounter'] == 2:
+        printField(computer['field'])
+        print(Fore.RED + "Your ship got sunk!!!")
+        print(Fore.RESET)
+    if computer['ship1HitCounter'] == 2 and computer['ship2HitCounter'] == 2:
+        printField(computer['field'])
+        print(Fore.RED + "You lose, the computer sank your ships.")
+        print(Fore.RESET)
+        exit()
 
 
 
@@ -680,33 +584,43 @@ def main():
 
     def print_fast(str):
             for char in str:
-                time.sleep(.1)
+                time.sleep(.2)
                 sys.stdout.write(char)
                 sys.stdout.flush()
 
     
-    print_fast("Would you like to play...")
-    if
-            
-
+    print_fast("Welcome!!!")
+    print("")
+    print_fast("Lets get started ")
     print("")
     #this runs the program with all the functions and determines board size
     while True:
-            try:
-                size = abs(int(input("What size do you want your board to be 1-52? (ex: 4x4 = 4, 8x8 = 8, 3x3 = 3) ")))
-                if size < 3:
-                    print ("You can't have a board that small.")
-                    continue
-                if size > 52:
-                    print("That's too big")
-                    continue
-                else:
-                    break
-            except:
-                print("Please enter a valid integer.")
+        try:
+            size = abs(int(input("What size do you want your board to be 1-52? (ex: 4x4 = 4, 8x8 = 8, 3x3 = 3) ")))
+            if size < 3:
+                print("You can't have a board that small.")
+                continue
+            if size > 52:
+                print("That's too big")
+                continue
+            else:
+                break
+        except:
+            print("Please enter a valid integer.")
 
-    field = createUserField(size)
-    computerField = createComputerField(size)
-    manipulateField(field, size, computerField)
+    player = {
+        'field': createField(size),
+        'ships': [],
+        'moves': []
+    }
+    computer = {
+        'field': createField(size),
+        'ships': [],
+        'moves': []
+    }
+
+    manipulateField(player, computer, size)
 
 main()
+
+
