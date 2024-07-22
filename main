@@ -4,599 +4,22 @@ import colorama
 from colorama import Fore, Style
 import time
 import sys
-
-
-
-
 # Initialize colorama
-
-
-
-
-
-
-
-
-print("\n"*10)
-print("                                                               # #  ( )")
-print("                                                            ___#_#___|__")
-print("                                                        _  |____________|  _")
-print("                                                 _=====| | |            | | |==== _")
-print("                                             =====| |.---------------------------. | |====")
-print("                               <--------------------'   .  .  .  .  .  .  .  .   '--------------/")
-print("                                 \                                                             /")
-print("                                  \_______________________________________________WWS_________/")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-time.sleep(.3)
-os.system('cls' if os.name == 'nt' else 'clear')
-print("\n"*10)
-print("                                                            # #  ( )")
-print("                                                         ___#_#___|__")
-print("                                                      _  |____________|  _")
-print("                                               _=====| | |            | | |==== _")
-print("                                          =====| |.---------------------------. | |====")
-print("                            <--------------------'   .  .  .  .  .  .  .  .   '--------------/")
-print("                              \                                                             /")
-print("                               \_______________________________________________WWS_________/")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-time.sleep(.3)
-os.system('cls' if os.name == 'nt' else 'clear')
-print("\n"*10)
-print("                                                         # #  ( )")
-print("                                                      ___#_#___|__")
-print("                                                  _  |____________|  _")
-print("                                           _=====| | |            | | |==== _")
-print("                                      =====| |.---------------------------. | |====")
-print("                         <--------------------'   .  .  .  .  .  .  .  .   '--------------/")
-print("                           \                                                             /")
-print("                            \_______________________________________________WWS_________/")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-time.sleep(.3)
-os.system('cls' if os.name == 'nt' else 'clear')
-print("\n"*10)
-print("                                                      # #  ( )")
-print("                                                   ___#_#___|__")
-print("                                               _  |____________|  _")
-print("                                        _=====| | |            | | |==== _")
-print("                                   =====| |.---------------------------. | |====")
-print("                      <--------------------'   .  .  .  .  .  .  .  .   '--------------/")
-print("                        \                                                             /")
-print("                         \_______________________________________________WWS_________/")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-time.sleep(.3)
-os.system('cls' if os.name == 'nt' else 'clear')
-print("\n"*10)
-print("                                                   # #  ( )")
-print("                                                ___#_#___|__")
-print("                                            _  |____________|  _")
-print("                                     _=====| | |            | | |==== _")
-print("                                =====| |.---------------------------. | |====")
-print("                   <--------------------'   .  .  .  .  .  .  .  .   '--------------/")
-print("                     \                                                             /")
-print("                      \_______________________________________________WWS_________/")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-time.sleep(.3)
-os.system('cls' if os.name == 'nt' else 'clear')
-print("\n"*10)
-print("                                                # #  ( )")
-print("                                             ___#_#___|__")
-print("                                         _  |____________|  _")
-print("                                  _=====| | |            | | |==== _")
-print("                             =====| |.---------------------------. | |====")
-print("                <--------------------'   .  .  .  .  .  .  .  .   '--------------/")
-print("                  \                                                             /")
-print("                   \_______________________________________________WWS_________/")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-time.sleep(.3)
-os.system('cls' if os.name == 'nt' else 'clear')
-
-
-
-
-import winsound
-winsound.PlaySound('Welcome.wav', winsound.SND_FILENAME)
-
-
-
-
-
-
-
-
-print("\n"*10)
-print("                                     _                                  ")
-print("                  |\**/|            (`  ).                   _        ")
-print("                  \ == /           (     ).              .:(`  )`.       ")
-print(")                  |  |           _(       '`.          :(   .    )      ")
-print("                   |  |       .=(`(      .   )     .--  `.  (    ) )      ")
-print("      .--          \  /      ((    (..__.:'-'   .+(   )   ` _`  ) )      ")
-print("   .+(   )          \/        `(       ) )       (   .  )     (   )  ._   ")
-print("   (   .  )                 ` __.:'   )     (   (   ))     `-'.-(`  ) ")
-print("   (   (   ))            ( )       --'       `- __.'         :(      )) ")
-print("    `- __.'              (_.'          .')                    `(    )  ))")
-print("                                     (_  )                     ` __.:'         ")
-print("")
-print(" --..,___.--,--'`,-----..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.-a:f--.")
-time.sleep(.3)
-os.system('cls' if os.name == 'nt' else 'clear')
-print("\n"*10)
-print("                                     _                                  ")
-print("                                   (`  ).                   _        ")
-print("                   |\**/|          (     ).              .:(`  )`.       ")
-print(")                  \ == /          _(       '`.          :(   .    )      ")
-print("                    |  |      .=(`(      .   )     .--  `.  (    ) )      ")
-print("      .--           |  |     ((    (..__.:'-'   .+(   )   ` _`  ) )      ")
-print("   .+(   )          \  /      `(       ) )       (   .  )     (   )  ._   ")
-print("   (   .  )          \/        `  __.:'   )     (   (   ))     `-'.-(`  ) ")
-print("   (   (   ))            ( )     --'       `- __.'         :(      )) ")
-print("    `- __.'              (_.'          .')                    `(    )  ))")
-print("                                     (_  )                     ` __.:'         ")
-print("")
-print(" --..,___.--,--'`,-----..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.-a:f--.")
-time.sleep(.3)
-os.system('cls' if os.name == 'nt' else 'clear')
-print("\n"*10)
-print("                                     _                                  ")
-print("                                   (`  ).                   _        ")
-print("                                   (     ).              .:(`  )`.       ")
-print(")                                  _(       '`.          :(   .    )      ")
-print("                              .=(`(      .   )     .--  `.  (    ) )      ")
-print("      .--           |\**/|   ((    (..__.:'-'   .+(   )   ` _`  ) )      ")
-print("   .+(   )          \ == /    `(       ) )       (   .  )     (   )  ._   ")
-print("   (   .  )          |  |        `__.:'   )     (   (   ))     `-'.-(`  ) ")
-print("   (   (   ))        |  |( )       --'       `- __.'         :(      )) ")
-print("    `- __.'          \  /(_.'          .')                    `(    )  ))")
-print("                      \/             (_  )                     ` __.:'         ")
-print("")
-print(" --..,___.--,--'`,-----..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.-a:f--.")
-time.sleep(.3)
-os.system('cls' if os.name == 'nt' else 'clear')
-print("\n"*10)
-print("                                     _                                  ")
-print("                                   (`  ).                   _        ")
-print("                                   (     ).              .:(`  )`.       ")
-print(")                                  _(       '`.          :(   .    )      ")
-print("                              .=(`(      .   )     .--  `.  (    ) )      ")
-print("      .--           |\**/|   ((    (..__.:'-'   .+(   )   ` _`  ) )      ")
-print("   .+(   )          \ == /    `(       ) )       (   .  )     (   )  ._   ")
-print("   (   .  )          |  |        `__.:'   )     (   (   ))     `-'.-(`  ) ")
-print("   (   (   ))        |  |( )       --'       `- __.'         :(      )) ")
-print("    `- __.'          \  /(_.'          .')                    `(    )  ))")
-print("                      \/             (_  )                     ` __.:'         ")
-print(" --..,___.--,--'`,-----..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.-a:f--.")
-time.sleep(.3)
-os.system('cls' if os.name == 'nt' else 'clear')
-print("\n"*10)
-print("                                     _                                  ")
-print("                                    (`  ).                   _        ")
-print("                                   (     ).              .:(`  )`.       ")
-print(")                                 _(       '`.          :(   .    )      ")
-print("                              .=(`(      .   )     .--  `.  (    ) )      ")
-print("      .--                    ((    (..__.:'-'   .+(   )   ` _`  ) )      ")
-print("   .+(   )                    `(       ) )       (   .  )     (   )  ._   ")
-print("   (   .  )                 ` __.:'   )     (   (   ))     `-'.-(`  ) ")
-print("   (   (   ))            ( )       --'       `- __.'         :(      )) ")
-print("    `- __.'              (_.'          .')                    `(    )  ))")
-print("                                     (_  )                     ` __.:'         ")
-print("")
-print(" --..,___.--,--'`,-----..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.-a:f--.")
-print("")
-print("")
-print("")
-print("                   |\**/|")
-print("                   \ == /")
-print("                    |  |")
-print("                    |  |")
-print( "                    \  /")
-print("                     \/")
-print("")
-print("")
-print("")
-print("")
-print("")
-print("")
-print("")
-print("")
-print("                                                # #  ( )")
-print("                                             ___#_#___|__")
-print("                                         _  |____________|  _")
-print("                                  _=====| | |            | | |==== _")
-print("                             =====| |.---------------------------. | |====")
-print("                <--------------------'   .  .  .  .  .  .  .  .   '--------------/")
-print("                  \                                                             /")
-print("                   \_______________________________________________WWS_________/")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-os.system('cls' if os.name == 'nt' else 'clear')
-print("\n"*10)
-
-
-
-
-
-
-
-
-print("                                     _                                  ")
-print("                                    (`  ).                   _        ")
-print("                                   (     ).              .:(`  )`.       ")
-print(")                                 _(       '`.          :(   .    )      ")
-print("                              .=(`(      .   )     .--  `.  (    ) )      ")
-print("      .--                    ((    (..__.:'-'   .+(   )   ` _`  ) )      ")
-print("   .+(   )                    `(       ) )       (   .  )     (   )  ._   ")
-print("   (   .  )                 ` __.:'   )     (   (   ))     `-'.-(`  ) ")
-print("   (   (   ))            ( )       --'       `- __.'         :(      )) ")
-print("    `- __.'              (_.'          .')                    `(    )  ))")
-print("                                     (_  )                     ` __.:'         ")
-print("")
-print(" --..,___.--,--'`,-----..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.-a:f--.")
-print("")
-print("")
-print("")
-print("                   |\**/|")
-print("                   \ == /")
-print("                    |  |")
-print("                    |  |")
-print( "                    \  /")
-print("                     \/")
-print("")
-print("")
-print("")
-print("")
-print("")
-print("")
-print("                                             # #  ( )")
-print("                                          ___#_#___|__")
-print("                                      _  |____________|  _")
-print("                               _=====| | |            | | |==== _")
-print("                          =====| |.---------------------------. | |====")
-print("             <--------------------'   .  .  .  .  .  .  .  .   '--------------/")
-print("               \                                                             /")
-print("                \_______________________________________________WWS_________/")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-time.sleep(.3)
-os.system('cls' if os.name == 'nt' else 'clear')
-print("\n"*10)
-print("                                     _                                  ")
-print("                                    (`  ).                   _        ")
-print("                                   (     ).              .:(`  )`.       ")
-print(")                                 _(       '`.          :(   .    )      ")
-print("                              .=(`(      .   )     .--  `.  (    ) )      ")
-print("      .--                    ((    (..__.:'-'   .+(   )   ` _`  ) )      ")
-print("   .+(   )                    `(       ) )       (   .  )     (   )  ._   ")
-print("   (   .  )                 ` __.:'   )     (   (   ))     `-'.-(`  ) ")
-print("   (   (   ))            ( )       --'       `- __.'         :(      )) ")
-print("    `- __.'              (_.'          .')                    `(    )  ))")
-print("                                     (_  )                     ` __.:'         ")
-print("")
-print(" --..,___.--,--'`,-----..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.-a:f--.")
-print("")
-print("")
-print("")
-print("")
-print("")
-print("")
-print("")
-print("")
-print("")
-print("                   |\**/|")
-print("                   \ == /")
-print("                    |  |")
-print("                    |  |")
-print( "                    \  /")
-print("                     \/")
-print("")
-print("")
-print("")
-print("                                          # #  ( )")
-print("                                       ___#_#___|__")
-print("                                   _  |____________|  _")
-print("                            _=====| | |            | | |==== _")
-print("                       =====| |.---------------------------. | |====")
-print("          <--------------------'   .  .  .  .  .  .  .  .   '--------------/")
-print("            \                                                             /")
-print("             \_______________________________________________WWS_________/")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-time.sleep(.3)
-os.system('cls' if os.name == 'nt' else 'clear')
-print("\n"*10)
-print("")
-print("")
-print("")
-print("")
-print("                   |\**/|")
-print("                   \ == /")
-print("                    |  |")
-print("                    |  |")
-print( "                    \  /")
-print("                     \/")
-print("")
-print("                                       # #  ( )")
-print("                                    ___#_#___|__")
-print("                                _  |____________|  _")
-print("                         _=====| | |            | | |==== _")
-print("                    =====| |.---------------------------. | |====")
-print("       <--------------------'   .  .  .  .  .  .  .  .   '--------------/")
-print("         \                                                             /")
-print("          \_______________________________________________WWS_________/")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-
-
-
-
-
-
-
-
-time.sleep(.3)
-os.system('cls' if os.name == 'nt' else 'clear')
-print("\n"*10)
-
-
-
-
-
-
-
-
-print("                    |\**/|")
-print("                    \ == /")
-print("                     |  |")
-print("                     |  |           # #  ( )")
-print("                     \  /       ___#_#___|__")
-print("                      \/    _  |____________|  _")
-print("                   _=====| | |            | | |==== _")
-print("              =====| |.---------------------------. | |====")
-print(" <--------------------'   .  .  .  .  .  .  .  .   '--------------/")
-print("   \                                                             /")
-print("    \_______________________________________________WWS_________/")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-time.sleep(.3)
-os.system('cls' if os.name == 'nt' else 'clear')
-print("\n"*10)
-print("""
-       
-                   
-                            ____
-                    __,-~~/~    `---.
-                    _/_,---(      ,    )
-                __ /        <    /   )  \___
-- ------===;;;'====------------------===;;;===----- -  -        
-                \/  ~"~"~"~"~"~\~"~)~"/      
-                (_ (   \  (     >    \)              #   ( )
-                    \_( _ <         >_>'            __#_#___|__
-                    ~ `-i' ::>|--"           _  |____________|  _
-                        I;|.|.|        _==|   |             | |==== _
-                        `.  . ' ;.---------------------------. | |====
-                        '    .  .  .  .  .  .        '--------------/
-                \          <|i::|i|                                                  
-                        (` ^'"`-' ") ___________________________WWS_________/
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
-
-""")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-time.sleep(.5)
-os.system('cls' if os.name == 'nt' else 'clear')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-import sys
-import time
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-def print_fast(str):
-        for char in str:
-            time.sleep(.005)
-            sys.stdout.write(char)
-            sys.stdout.flush()
-
-
-
-
-           
-def print_slow(str):
-        for char in str:
-            time.sleep(.1)
-            sys.stdout.write(char)
-            sys.stdout.flush()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-print_fast("""
-       
-                             _           _   _   _           _     _
-                            | |         | | | | | |         | |   (_)      
-                            | |__   __ _| |_| |_| | ___  ___| |__  _ _ __  
-                            | '_ \ / _` | __| __| |/ _ \/ __| '_ \| | '_ \\
-                            | |_) | (_| | |_| |_| |  __/\__ \ | | | | |_) |
-                            |_.__/ \__,_|\__|\__|_|\___||___/_| |_|_| .__/
-                                                                    | |  
-                                                                    | |
-                                                    __/___          |_|
-                                            _____/______|
-                                    _______/_____\_______\_____
-                                    \              < < <       |
-                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                  
-                                                               
-       
-
-
-
-
-
-
-
-
-""")
-time.sleep(1)
-os.system('cls' if os.name == 'nt' else 'clear')
-
-
-
-
-     
-
-
-
-
+colorama.init(autoreset=True)
+def print_slow(text):
+    for char in text:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.05)
+    print()
 print_slow("Welcome!!!")
 print("")
 print_slow("Let's get started ")
 print("")
-
-
-
-
-
-
-
-
 # Define the size of the grid
 grid_size = 0
 while grid_size < 10:
     grid_size = int(input("Enter the size of the grid (minimum 10x10): "))
-    break
-
-
-
-
 # Define the ships
 ships = [
     {"name": "Aircraft Carrier", "size": 5},
@@ -605,41 +28,27 @@ ships = [
     {"name": "Cruiser", "size": 3},
     {"name": "Destroyer", "size": 2}
 ]
-
-
-
-
+# List of potential AI ship names
+ai_ship_names = ["Ironclad", "Poseidon", "Thunderbolt", "Hercules", "Titan", "Neptune", "Valkyrie", "Zephyr", "Leviathan", "Phoenix"]
 # Prompt user to give names to the ships
 for ship in ships:
     ship["user_name"] = input(f"Enter a name for your {ship['name']} (Size: {ship['size']}): ")
-
-
-
-
+# Assign AI ship names
+for ship in ships:
+    ship["ai_name"] = random.choice(ai_ship_names)
+    ai_ship_names.remove(ship["ai_name"])
 # Define the game mode
 game_mode = input("Enter 'P' for player vs player or 'C' for player vs computer: ").upper()
 os.system('cls' if os.name == 'nt' else 'clear')
 print("")
-
-
-
-
 # Initialize the boards
 user_board = [['~' for _ in range(grid_size)] for _ in range(grid_size)]
 enemy_board = [['~' for _ in range(grid_size)] for _ in range(grid_size)]
-
-
-
-
 # Function to display the board
 def display_board(board):
     for row in board:
         print(" ".join(row))
     print()
-
-
-
-
 # Function to place ships manually
 def place_ship_manually(board, ship, size):
     while True:
@@ -648,10 +57,6 @@ def place_ship_manually(board, ship, size):
         start_row = int(input(f"Enter the start row (0-{grid_size-1}): "))
         start_col = int(input(f"Enter the start column (0-{grid_size-1}): "))
         orientation = input("Enter orientation (H for horizontal, V for vertical): ").upper()
-
-
-
-
         if orientation == 'H' and start_col + size <= grid_size:
             if all(board[start_row][col] == '~' for col in range(start_col, start_col + size)):
                 for col in range(start_col, start_col + size):
@@ -663,19 +68,12 @@ def place_ship_manually(board, ship, size):
                     board[row][start_col] = '#'
                 return [(start_row, start_col), (start_row + size - 1, start_col)]
         print("Invalid placement. Try again.")
-
-
-
-
 # Function to place ships randomly
 def place_ship_randomly(board, size):
     while True:
         row = random.randint(0, grid_size - 1)
         col = random.randint(0, grid_size - 1)
         orientation = random.choice(['horizontal', 'vertical'])
-
-
-
 
         if orientation == 'horizontal' and col + size <= grid_size:
             if all(board[row][c] == '~' for c in range(col, col + size)):
@@ -687,28 +85,16 @@ def place_ship_randomly(board, size):
                 for r in range(row, row + size):
                     board[r][col] = '#'
                 return [(row, col), (row + size - 1, col)]
-
-
-
-
 # Place user's ships
 user_ship_positions = []
 for ship in ships:
     position = place_ship_manually(user_board, ship["user_name"], ship["size"])
     user_ship_positions.append(position)
-
-
-
-
 # Place enemy's ships randomly
 enemy_ship_positions = []
 for ship in ships:
     position = place_ship_randomly(enemy_board, ship["size"])
     enemy_ship_positions.append(position)
-
-
-
-
 # Define the game loop
 user_guesses = []
 enemy_guesses = []
@@ -716,72 +102,40 @@ user_hits = 0
 enemy_hits = 0
 turns = 0
 max_turns = 100
-
-
-
-
 while user_hits < sum(ship["size"] for ship in ships) and enemy_hits < sum(ship["size"] for ship in ships) and turns < max_turns:
     os.system('cls' if os.name == 'nt' else 'clear')
-
-
-
-
     # Display the user's board
     print("Your board:")
     display_board(user_board)
-
-
-
-
     # Display the enemy's board (hidden)
     print("Enemy's board:")
     display_board([['~' if cell == '~' else 'X' for cell in row] for row in enemy_board])
-
-
-
-
     # Get the user's guess
     row = int(input("Enter the row (0-{}): ".format(grid_size - 1)))
     col = int(input("Enter the column (0-{}): ".format(grid_size - 1)))
-
-
-
-
     # Check if the user's guess is valid
     if (row, col) in user_guesses:
         print("You already guessed that location. Try again.")
         time.sleep(2)
         continue
-
-
-
-
     user_guesses.append((row, col))
-
-
-
-
     # Check if the user's guess hit a ship
     hit = False
     for i, (start, end) in enumerate(enemy_ship_positions):
-        if (row, col) >= start and (row, col) <= end:
+        if (start[0] <= row <= end[0]) and (start[1] <= col <= end[1]):
             hit = True
             enemy_board[row][col] = 'X'
             user_hits += 1
-            print(Fore.GREEN + "Hit!" + Style.RESET_ALL)
+            print(Fore.GREEN + f"Hit at ({row}, {col})!" + Style.RESET_ALL)
             if user_hits == sum(ship["size"] for ship in ships):
                 print(Fore.GREEN + "You sank all the enemy ships!" + Style.RESET_ALL)
                 break
             elif user_hits == ships[i]["size"]:
-                print(Fore.GREEN + "You sank the " + ships[i]["user_name"] + "!" + Style.RESET_ALL)
+                print(Fore.GREEN + f"You sank the {ships[i]['ai_name']}!" + Style.RESET_ALL)
             break
     if not hit:
         enemy_board[row][col] = 'O'
-        print(Fore.RED + "Miss." + Style.RESET_ALL)
-
-
-
-
+        print(Fore.RED + f"Miss at ({row}, {col})." + Style.RESET_ALL)
     # Get the computer's guess
     if game_mode == 'C':
         row = random.randint(0, grid_size - 1)
@@ -790,56 +144,28 @@ while user_hits < sum(ship["size"] for ship in ships) and enemy_hits < sum(ship[
             row = random.randint(0, grid_size - 1)
             col = random.randint(0, grid_size - 1)
         enemy_guesses.append((row, col))
-
-
-
-
         # Check if the computer's guess hit a ship
         hit = False
         for i, (start, end) in enumerate(user_ship_positions):
-            if (row, col) >= start and (row, col) <= end:
+            if (start[0] <= row <= end[0]) and (start[1] <= col <= end[1]):
                 hit = True
                 user_board[row][col] = 'X'
                 enemy_hits += 1
-                print(Fore.GREEN + "The enemy hit your ship!" + Style.RESET_ALL)
+                print(Fore.GREEN + f"The enemy hit your ship at ({row}, {col})!" + Style.RESET_ALL)
                 if enemy_hits == sum(ship["size"] for ship in ships):
                     print(Fore.RED + "The enemy sank all your ships!" + Style.RESET_ALL)
                     break
                 elif enemy_hits == ships[i]["size"]:
-                    print(Fore.RED + "The enemy sank your " + ships[i]["user_name"] + "!" + Style.RESET_ALL)
+                    print(Fore.RED + f"The enemy sank your {ships[i]['user_name']}!" + Style.RESET_ALL)
                 break
         if not hit:
             user_board[row][col] = 'O'
-            print(Fore.BLUE + "The enemy missed." + Style.RESET_ALL)
-
-
-
-
+            print(Fore.BLUE + f"The enemy missed at ({row}, {col})." + Style.RESET_ALL)
     turns += 1
     time.sleep(2)
-
-
-
-
 if user_hits == sum(ship["size"] for ship in ships):
     print(Fore.GREEN + "Congratulations, you won!" + Style.RESET_ALL)
-
-
-
-
-
-
-
-
-
-
-
-
     print("""
-
-
-
-
                    .---.
               ___ /_____\\
              /\.-`( '.' )
@@ -860,33 +186,9 @@ if user_hits == sum(ship["size"] for ship in ships):
                   |_ | _|
                  (___|___)
                   ^^^ ^^^
-
-
-
-
          """)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 elif enemy_hits == sum(ship["size"] for ship in ships):
     print(Fore.RED + "You lost." + Style.RESET_ALL)
-
-
-
-
     print("""
                  .---.
                 /_____\\
@@ -910,25 +212,7 @@ elif enemy_hits == sum(ship["size"] for ship in ships):
 
 
     """)
-
-
-
-
 else:
     print(Fore.YELLOW + "The game ended in a draw." + Style.RESET_ALL)
-
-
-
-
 # Reset colorama
 colorama.deinit()
-
-
-
-
-
-
-
-
-
-
