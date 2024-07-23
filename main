@@ -1,9 +1,9 @@
-import random  # Import the random module for generating random numbers
-import os  # Import the os module for operating system dependent functionality (e.g., clearing screen)
-import colorama  # Import colorama for colored terminal text
-from colorama import Fore, Style  # Import specific classes for color and style
-import time  # Import time module for handling delays
-import sys  # Import sys module for interacting with the Python interpreter
+import random 
+import os 
+import colorama 
+from colorama import Fore, Style 
+import time 
+import sys
 
 # Initialize colorama
 
@@ -418,16 +418,11 @@ print_fast("""
 """)
 time.sleep(1)
 os.system('cls' if os.name == 'nt' else 'clear')
-# Initialize colorama for colored text output in the terminal
-colorama.init(autoreset=True)  # `autoreset=True` ensures text color resets after each print statement
+
+colorama.init(autoreset=True)  # text color resets after each print statement
 
 def print_slow(text):
-    """
-    Prints text slowly to simulate a typing effect.
-    
-    Args:
-        text (str): The text to print slowly.
-    """
+
     for char in text:
         sys.stdout.write(char)  # Write each character to the terminal
         sys.stdout.flush()      # Ensure the character is displayed immediately
@@ -435,41 +430,25 @@ def print_slow(text):
     print()  # Move to the next line after printing all characters
 
 def get_valid_input(prompt, min_val, max_val):
-    """
-    Prompts the user for an integer input and validates that it is within the specified range.
-    
-    Args:
-        prompt (str): The prompt message to display to the user.
-        min_val (int): The minimum valid value.
-        max_val (int): The maximum valid value.
-    
-    Returns:
-        int: The validated integer input from the user.
-    """
+
     while True:  # Continuously loop until valid input is received
         try:
             value = int(input(prompt))  # Read input from user and convert it to an integer
             if min_val <= value <= max_val:  # Check if the value is within the specified range
-                return value  # Return the valid value
+                return value
             else:
-                print(f"Please enter a number between {min_val} and {max_val}.")  # Inform user if the input is out of range
+                print(f"Please enter a number between {min_val} and {max_val}.")  #input is out of range
         except ValueError:  # Handle cases where the input is not a valid integer
             print("Invalid input. Please enter a number.")  # Inform user of invalid input
 
-print_slow("Welcome!!!")  # Display a welcome message with a typing effect
-print("")  # Print a blank line for spacing
-print_slow("Let's get started ")  # Display instruction with a typing effect
-print("")  # Print a blank line for spacing
+print_slow("Welcome!!!")
+print("")  
+print_slow("Let's get started ")
+print("") 
 
 def display_board(board, show_all=False):
-    """
-    Displays the current state of the board with or without hiding ship positions.
-    
-    Args:
-        board (list of lists): The board to display, where each cell is a string.
-        show_all (bool): If True, display all cells including ships; otherwise, hide ship positions.
-    """
-    # Print column headers (e.g., "1 2 3 4")
+
+    # Print column headers
     print("  " + " ".join(str(i) for i in range(1, len(board) + 1)))
     for i, row in enumerate(board):  # Enumerate over rows in the board
         if show_all:
@@ -479,21 +458,11 @@ def display_board(board, show_all=False):
             # Hide ship positions; display only hits ('X') and misses ('O') with empty cells ('~')
             row_display = " ".join(cell if cell in ['X', 'O'] else '~' for cell in row)
         print(f"{i+1} {row_display}")  # Print row number (e.g., "1") and row contents
-    print()  # Print a blank line for spacing
+    print()
 
 def place_ship_manually(board, ship, size):
-    """
-    Allows the user to manually place a ship on the board.
-    
-    Args:
-        board (list of lists): The board on which to place the ship.
-        ship (str): The name of the ship being placed.
-        size (int): The size of the ship (number of cells it occupies).
-    
-    Returns:
-        list of tuples: The coordinates of the ship's start and end positions.
-    """
-    while True:  # Continuously loop until the ship is placed correctly
+
+    while True: 
         display_board(board, show_all=True)  # Show the board to the user
         print(f"Placing {ship} (Size: {size})")  # Prompt user about the ship placement
         
@@ -518,20 +487,11 @@ def place_ship_manually(board, ship, size):
                     board[row][start_col] = '#'  # Mark the ship's position
                 return [(start_row, start_col), (start_row + size - 1, start_col)]  # Return the ship's start and end coordinates
         
-        # Inform user if placement is invalid and prompt to try again
-        print("Invalid placement. Try again.")  # Notify user of invalid placement
+        # placement is invalid and prompt to try again
+        print("Invalid placement. Try again.")
 
 def place_ship_randomly(board, size):
-    """
-    Randomly places a ship on the board.
-    
-    Args:
-        board (list of lists): The board on which to place the ship.
-        size (int): The size of the ship (number of cells it occupies).
-    
-    Returns:
-        list of tuples: The coordinates of the ship's start and end positions.
-    """
+
     while True:  # Continuously loop until the ship is placed correctly
         row = random.randint(0, len(board) - 1)  # Randomly select a row
         col = random.randint(0, len(board) - 1)  # Randomly select a column
@@ -554,18 +514,12 @@ def place_ship_randomly(board, size):
                 return [(row, col), (row + size - 1, col)]  # Return the ship's start and end coordinates
 
 def game_loop(player, computer):
-    """
-    Runs the main game loop where players take turns guessing and marking hits/misses.
-    
-    Args:
-        player (dict): Dictionary containing player information, including board, ships, and guesses.
-        computer (dict): Dictionary containing computer information, including board, ships, and guesses.
-    """
+
     turns = 0  # Initialize turn counter
-    max_turns = 100  # Maximum number of turns allowed in the game
+    max_turns = 100  # Max number of turns
     
     while player['hits'] < sum(ship["size"] for ship in player['ships']) and computer['hits'] < sum(ship["size"] for ship in computer['ships']) and turns < max_turns:
-        os.system('cls' if os.name == 'nt' else 'clear')  # Clear the terminal screen for a fresh display
+        os.system('cls' if os.name == 'nt' else 'clear')
         
         # Display the player's board with all ship positions
         print("Your board:")
@@ -634,8 +588,8 @@ def game_loop(player, computer):
             player['board'][row][col] = 'O'  # Mark the miss on the board
             print(Fore.BLUE + f"The enemy missed at ({row+1}, {col+1})." + Style.RESET_ALL)  # Inform user of the miss
         
-        turns += 1  # Increment the turn counter
-        time.sleep(2)  # Pause for 2 seconds before the next turn
+        turns += 1
+        time.sleep(2)
     
     # Print game results based on the outcome
     if player['hits'] == sum(ship["size"] for ship in player['ships']):
@@ -688,7 +642,7 @@ def game_loop(player, computer):
     else:
         print(Fore.YELLOW + "The game ended in a draw." + Style.RESET_ALL)  # Game ends in a draw
 
-# Reset colorama to its default state
+
 colorama.deinit()
 
 if __name__ == "__main__":
