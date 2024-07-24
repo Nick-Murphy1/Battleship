@@ -1,600 +1,367 @@
-import random 
-import os 
-import colorama 
-from colorama import Fore, Style 
-import time 
-import sys
+import random
 
-# Initialize colorama
+import os
 
+import colorama
 
-print("\n"*10)
-print("                                                               # #  ( )")
-print("                                                            ___#_#___|__")
-print("                                                        _  |____________|  _")
-print("                                                 _=====| | |            | | |==== _")
-print("                                             =====| |.---------------------------. | |====")
-print("                               <--------------------'   .  .  .  .  .  .  .  .   '--------------/")
-print("                                 \                                                             /")
-print("                                  \_______________________________________________WWS_________/")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-time.sleep(.3)
-os.system('cls' if os.name == 'nt' else 'clear')
-print("\n"*10)
-print("                                                            # #  ( )")
-print("                                                         ___#_#___|__")
-print("                                                      _  |____________|  _")
-print("                                               _=====| | |            | | |==== _")
-print("                                          =====| |.---------------------------. | |====")
-print("                            <--------------------'   .  .  .  .  .  .  .  .   '--------------/")
-print("                              \                                                             /")
-print("                               \_______________________________________________WWS_________/")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-time.sleep(.3)
-os.system('cls' if os.name == 'nt' else 'clear')
-print("\n"*10)
-print("                                                         # #  ( )")
-print("                                                      ___#_#___|__")
-print("                                                  _  |____________|  _")
-print("                                           _=====| | |            | | |==== _")
-print("                                      =====| |.---------------------------. | |====")
-print("                         <--------------------'   .  .  .  .  .  .  .  .   '--------------/")
-print("                           \                                                             /")
-print("                            \_______________________________________________WWS_________/")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-time.sleep(.3)
-os.system('cls' if os.name == 'nt' else 'clear')
-print("\n"*10)
-print("                                                      # #  ( )")
-print("                                                   ___#_#___|__")
-print("                                               _  |____________|  _")
-print("                                        _=====| | |            | | |==== _")
-print("                                   =====| |.---------------------------. | |====")
-print("                      <--------------------'   .  .  .  .  .  .  .  .   '--------------/")
-print("                        \                                                             /")
-print("                         \_______________________________________________WWS_________/")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-time.sleep(.3)
-os.system('cls' if os.name == 'nt' else 'clear')
-print("\n"*10)
-print("                                                   # #  ( )")
-print("                                                ___#_#___|__")
-print("                                            _  |____________|  _")
-print("                                     _=====| | |            | | |==== _")
-print("                                =====| |.---------------------------. | |====")
-print("                   <--------------------'   .  .  .  .  .  .  .  .   '--------------/")
-print("                     \                                                             /")
-print("                      \_______________________________________________WWS_________/")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-time.sleep(.3)
-os.system('cls' if os.name == 'nt' else 'clear')
-print("\n"*10)
-print("                                                # #  ( )")
-print("                                             ___#_#___|__")
-print("                                         _  |____________|  _")
-print("                                  _=====| | |            | | |==== _")
-print("                             =====| |.---------------------------. | |====")
-print("                <--------------------'   .  .  .  .  .  .  .  .   '--------------/")
-print("                  \                                                             /")
-print("                   \_______________________________________________WWS_________/")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-time.sleep(.3)
-os.system('cls' if os.name == 'nt' else 'clear')
+from colorama import Fore, Style
 
-print("\n"*10)
-print("                                     _                                  ")
-print("                  |\**/|            (`  ).                   _        ")
-print("                  \ == /           (     ).              .:(`  )`.       ")
-print(")                  |  |           _(       '`.          :(   .    )      ")
-print("                   |  |       .=(`(      .   )     .--  `.  (    ) )      ")
-print("      .--          \  /      ((    (..__.:'-'   .+(   )   ` _`  ) )      ")
-print("   .+(   )          \/        `(       ) )       (   .  )     (   )  ._   ")
-print("   (   .  )                 ` __.:'   )     (   (   ))     `-'.-(`  ) ")
-print("   (   (   ))            ( )       --'       `- __.'         :(      )) ")
-print("    `- __.'              (_.'          .')                    `(    )  ))")
-print("                                     (_  )                     ` __.:'         ")
-print("")
-print(" --..,___.--,--'`,-----..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.-a:f--.")
-time.sleep(.3)
-os.system('cls' if os.name == 'nt' else 'clear')
-print("\n"*10)
-print("                                     _                                  ")
-print("                                   (`  ).                   _        ")
-print("                   |\**/|          (     ).              .:(`  )`.       ")
-print(")                  \ == /          _(       '`.          :(   .    )      ")
-print("                    |  |      .=(`(      .   )     .--  `.  (    ) )      ")
-print("      .--           |  |     ((    (..__.:'-'   .+(   )   ` _`  ) )      ")
-print("   .+(   )          \  /      `(       ) )       (   .  )     (   )  ._   ")
-print("   (   .  )          \/        `  __.:'   )     (   (   ))     `-'.-(`  ) ")
-print("   (   (   ))            ( )     --'       `- __.'         :(      )) ")
-print("    `- __.'              (_.'          .')                    `(    )  ))")
-print("                                     (_  )                     ` __.:'         ")
-print("")
-print(" --..,___.--,--'`,-----..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.-a:f--.")
-time.sleep(.3)
-os.system('cls' if os.name == 'nt' else 'clear')
-print("\n"*10)
-print("                                     _                                  ")
-print("                                   (`  ).                   _        ")
-print("                                   (     ).              .:(`  )`.       ")
-print(")                                  _(       '`.          :(   .    )      ")
-print("                              .=(`(      .   )     .--  `.  (    ) )      ")
-print("      .--           |\**/|   ((    (..__.:'-'   .+(   )   ` _`  ) )      ")
-print("   .+(   )          \ == /    `(       ) )       (   .  )     (   )  ._   ")
-print("   (   .  )          |  |        `__.:'   )     (   (   ))     `-'.-(`  ) ")
-print("   (   (   ))        |  |( )       --'       `- __.'         :(      )) ")
-print("    `- __.'          \  /(_.'          .')                    `(    )  ))")
-print("                      \/             (_  )                     ` __.:'         ")
-print("")
-print(" --..,___.--,--'`,-----..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.-a:f--.")
-time.sleep(.3)
-os.system('cls' if os.name == 'nt' else 'clear')
-print("\n"*10)
-print("                                     _                                  ")
-print("                                   (`  ).                   _        ")
-print("                                   (     ).              .:(`  )`.       ")
-print(")                                  _(       '`.          :(   .    )      ")
-print("                              .=(`(      .   )     .--  `.  (    ) )      ")
-print("      .--           |\**/|   ((    (..__.:'-'   .+(   )   ` _`  ) )      ")
-print("   .+(   )          \ == /    `(       ) )       (   .  )     (   )  ._   ")
-print("   (   .  )          |  |        `__.:'   )     (   (   ))     `-'.-(`  ) ")
-print("   (   (   ))        |  |( )       --'       `- __.'         :(      )) ")
-print("    `- __.'          \  /(_.'          .')                    `(    )  ))")
-print("                      \/             (_  )                     ` __.:'         ")
-print(" --..,___.--,--'`,-----..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.-a:f--.")
-time.sleep(.3)
-os.system('cls' if os.name == 'nt' else 'clear')
-print("\n"*10)
-print("                                     _                                  ")
-print("                                    (`  ).                   _        ")
-print("                                   (     ).              .:(`  )`.       ")
-print(")                                 _(       '`.          :(   .    )      ")
-print("                              .=(`(      .   )     .--  `.  (    ) )      ")
-print("      .--                    ((    (..__.:'-'   .+(   )   ` _`  ) )      ")
-print("   .+(   )                    `(       ) )       (   .  )     (   )  ._   ")
-print("   (   .  )                 ` __.:'   )     (   (   ))     `-'.-(`  ) ")
-print("   (   (   ))            ( )       --'       `- __.'         :(      )) ")
-print("    `- __.'              (_.'          .')                    `(    )  ))")
-print("                                     (_  )                     ` __.:'         ")
-print("")
-print(" --..,___.--,--'`,-----..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.-a:f--.")
-print("")
-print("")
-print("")
-print("                   |\**/|")
-print("                   \ == /")
-print("                    |  |")
-print("                    |  |")
-print( "                    \  /")
-print("                     \/")
-print("")
-print("")
-print("")
-print("")
-print("")
-print("")
-print("")
-print("")
-print("                                                # #  ( )")
-print("                                             ___#_#___|__")
-print("                                         _  |____________|  _")
-print("                                  _=====| | |            | | |==== _")
-print("                             =====| |.---------------------------. | |====")
-print("                <--------------------'   .  .  .  .  .  .  .  .   '--------------/")
-print("                  \                                                             /")
-print("                   \_______________________________________________WWS_________/")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-os.system('cls' if os.name == 'nt' else 'clear')
-print("\n"*10)
-
-
-print("                                     _                                  ")
-print("                                    (`  ).                   _        ")
-print("                                   (     ).              .:(`  )`.       ")
-print(")                                 _(       '`.          :(   .    )      ")
-print("                              .=(`(      .   )     .--  `.  (    ) )      ")
-print("      .--                    ((    (..__.:'-'   .+(   )   ` _`  ) )      ")
-print("   .+(   )                    `(       ) )       (   .  )     (   )  ._   ")
-print("   (   .  )                 ` __.:'   )     (   (   ))     `-'.-(`  ) ")
-print("   (   (   ))            ( )       --'       `- __.'         :(      )) ")
-print("    `- __.'              (_.'          .')                    `(    )  ))")
-print("                                     (_  )                     ` __.:'         ")
-print("")
-print(" --..,___.--,--'`,-----..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.-a:f--.")
-print("")
-print("")
-print("")
-print("                   |\**/|")
-print("                   \ == /")
-print("                    |  |")
-print("                    |  |")
-print( "                    \  /")
-print("                     \/")
-print("")
-print("")
-print("")
-print("")
-print("")
-print("")
-print("                                             # #  ( )")
-print("                                          ___#_#___|__")
-print("                                      _  |____________|  _")
-print("                               _=====| | |            | | |==== _")
-print("                          =====| |.---------------------------. | |====")
-print("             <--------------------'   .  .  .  .  .  .  .  .   '--------------/")
-print("               \                                                             /")
-print("                \_______________________________________________WWS_________/")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-time.sleep(.3)
-os.system('cls' if os.name == 'nt' else 'clear')
-print("\n"*10)
-print("                                     _                                  ")
-print("                                    (`  ).                   _        ")
-print("                                   (     ).              .:(`  )`.       ")
-print(")                                 _(       '`.          :(   .    )      ")
-print("                              .=(`(      .   )     .--  `.  (    ) )      ")
-print("      .--                    ((    (..__.:'-'   .+(   )   ` _`  ) )      ")
-print("   .+(   )                    `(       ) )       (   .  )     (   )  ._   ")
-print("   (   .  )                 ` __.:'   )     (   (   ))     `-'.-(`  ) ")
-print("   (   (   ))            ( )       --'       `- __.'         :(      )) ")
-print("    `- __.'              (_.'          .')                    `(    )  ))")
-print("                                     (_  )                     ` __.:'         ")
-print("")
-print(" --..,___.--,--'`,-----..,___.--,--'`,---..-.--+--.,,-,,..._.--..-._.-a:f--.")
-print("")
-print("")
-print("")
-print("")
-print("")
-print("")
-print("")
-print("")
-print("")
-print("                   |\**/|")
-print("                   \ == /")
-print("                    |  |")
-print("                    |  |")
-print( "                    \  /")
-print("                     \/")
-print("")
-print("")
-print("")
-print("                                          # #  ( )")
-print("                                       ___#_#___|__")
-print("                                   _  |____________|  _")
-print("                            _=====| | |            | | |==== _")
-print("                       =====| |.---------------------------. | |====")
-print("          <--------------------'   .  .  .  .  .  .  .  .   '--------------/")
-print("            \                                                             /")
-print("             \_______________________________________________WWS_________/")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-
-
-
-
-time.sleep(.3)
-os.system('cls' if os.name == 'nt' else 'clear')
-print("\n"*10)
-print("")
-print("")
-print("")
-print("")
-print("                   |\**/|")
-print("                   \ == /")
-print("                    |  |")
-print("                    |  |")
-print( "                    \  /")
-print("                     \/")
-print("")
-print("                                       # #  ( )")
-print("                                    ___#_#___|__")
-print("                                _  |____________|  _")
-print("                         _=====| | |            | | |==== _")
-print("                    =====| |.---------------------------. | |====")
-print("       <--------------------'   .  .  .  .  .  .  .  .   '--------------/")
-print("         \                                                             /")
-print("          \_______________________________________________WWS_________/")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-
-
-time.sleep(.3)
-os.system('cls' if os.name == 'nt' else 'clear')
-print("\n"*10)
-
-
-print("                    |\**/|")
-print("                    \ == /")
-print("                     |  |")
-print("                     |  |           # #  ( )")
-print("                     \  /       ___#_#___|__")
-print("                      \/    _  |____________|  _")
-print("                   _=====| | |            | | |==== _")
-print("              =====| |.---------------------------. | |====")
-print(" <--------------------'   .  .  .  .  .  .  .  .   '--------------/")
-print("   \                                                             /")
-print("    \_______________________________________________WWS_________/")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
-
-
-
-
-time.sleep(.3)
-os.system('cls' if os.name == 'nt' else 'clear')
-print("\n"*10)
-print("""
-        
-                    
-                            ____
-                    __,-~~/~    `---.
-                    _/_,---(      ,    )
-                __ /        <    /   )  \___
-- ------===;;;'====------------------===;;;===----- -  -        
-                \/  ~"~"~"~"~"~\~"~)~"/      
-                (_ (   \  (     >    \)              #   ( )
-                    \_( _ <         >_>'            __#_#___|__
-                    ~ `-i' ::>|--"           _  |____________|  _
-                        I;|.|.|        _==|   |             | |==== _
-                        `.  . ' ;.---------------------------. | |====
-                        '    .  .  .  .  .  .        '--------------/
-                \          <|i::|i|                                                  
-                        (` ^'"`-' ") ___________________________WWS_________/
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-""")
-
-
-
-
-
-
-time.sleep(.5)
-os.system('cls' if os.name == 'nt' else 'clear')
-
-
-
-
-
-
-
-
-import sys
 import time
 
+import sys
 
 
 
-def print_fast(str):
-        for char in str:
-            time.sleep(.005)
-            sys.stdout.write(char)
-            sys.stdout.flush()
+colorama.init(autoreset=True)# text color resets after each print statement
 
-
-
-
-print_fast("""
-        
-                             _           _   _   _           _     _
-                            | |         | | | | | |         | |   (_)      
-                            | |__   __ _| |_| |_| | ___  ___| |__  _ _ __  
-                            | '_ \ / _` | __| __| |/ _ \/ __| '_ \| | '_ \\
-                            | |_) | (_| | |_| |_| |  __/\__ \ | | | | |_) |
-                            |_.__/ \__,_|\__|\__|_|\___||___/_| |_|_| .__/
-                                                                    | |  
-                                                                    | |
-                                                    __/___          |_|
-                                            _____/______|
-                                    _______/_____\_______\_____
-                                    \              < < <       |
-                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                                                                  
-                                                                
-        
-
-
-""")
-time.sleep(1)
-os.system('cls' if os.name == 'nt' else 'clear')
-
-colorama.init(autoreset=True)  # text color resets after each print statement
 
 def print_slow(text):
 
     for char in text:
-        sys.stdout.write(char)  # Write each character to the terminal
-        sys.stdout.flush()      # Ensure the character is displayed immediately
-        time.sleep(0.05)       # Wait for a short time before printing the next character
-    print()  # Move to the next line after printing all characters
 
-def get_valid_input(prompt, min_val, max_val):
+        sys.stdout.write(char) # Write each character to the terminal
 
-    while True:  # Continuously loop until valid input is received
-        try:
-            value = int(input(prompt))  # Read input from user and convert it to an integer
-            if min_val <= value <= max_val:  # Check if the value is within the specified range
-                return value
-            else:
-                print(f"Please enter a number between {min_val} and {max_val}.")  #input is out of range
-        except ValueError:  # Handle cases where the input is not a valid integer
-            print("Invalid input. Please enter a number.")  # Inform user of invalid input
+        sys.stdout.flush()  # Ensure the character is displayed immediately
+
+        time.sleep(0.05) # Wait for a short time before printing the next character
+
+    print() # Move to the next line after printing all characters
+
+
+
+
+def get_valid_input(prompt, valid_range):
+
+    while True: # Continuously loop until valid input is received
+
+        user_input = input(prompt).strip().upper()
+
+        if user_input in valid_range:
+
+            return user_input
+
+        else:
+
+            print(f"Invalid input. Please enter a value in range {valid_range}.")  # Inform user of invalid input
+
+
 
 print_slow("Welcome!!!")
-print("")  
+
+print("")
+
 print_slow("Let's get started ")
-print("") 
+
+print("")
+
+
+
+def initialize_board(size=10):
+
+    return [['~' for _ in range(size)] for _ in range(size)]
+
+
 
 def display_board(board, show_all=False):
 
-    # Print column headers
-    print("  " + " ".join(str(i) for i in range(1, len(board) + 1)))
-    for i, row in enumerate(board):  # Enumerate over rows in the board
-        if show_all:
-            # Display all cells including ship positions ('#', 'X', 'O') and empty cells ('~')
+    print("  " + " ".join(chr(ord('A') + i) for i in range(len(board))))
+
+    for i, row in enumerate(board): # Enumerate over rows in the board
+
+        if show_all:  # Display all cells including ship positions ('#', 'X', 'O') and empty cells ('~')
+          
             row_display = " ".join(cell if cell in ['#', 'X', 'O'] else '~' for cell in row)
-        else:
-            # Hide ship positions; display only hits ('X') and misses ('O') with empty cells ('~')
+
+        else:  # Hide ship positions; display only hits ('X') and misses ('O') with empty cells ('~')
+
             row_display = " ".join(cell if cell in ['X', 'O'] else '~' for cell in row)
-        print(f"{i+1} {row_display}")  # Print row number (e.g., "1") and row contents
+
+        print(f"{i+1:2} {row_display}") # Print row number (e.g., "1") and row contents
+
     print()
 
-def place_ship_manually(board, ship, size):
+def place_ship(board, size, manually=True):
 
-    while True: 
-        display_board(board, show_all=True)  # Show the board to the user
-        print(f"Placing {ship} (Size: {size})")  # Prompt user about the ship placement
-        
-        # Get user input for starting row and column
-        start_row = get_valid_input(f"Enter the start row (1-{len(board)}): ", 1, len(board)) - 1
-        start_col = get_valid_input(f"Enter the start column (1-{len(board)}): ", 1, len(board)) - 1
-        orientation = input("Enter orientation (H for horizontal, V for vertical): ").upper()
-        
-        # Check if the ship can be placed horizontally
-        if orientation == 'H' and start_col + size <= len(board):
-            if all(board[start_row][col] == '~' for col in range(start_col, start_col + size)):
-                # Place the ship on the board
-                for col in range(start_col, start_col + size):
-                    board[start_row][col] = '#'  # Mark the ship's position
-                return [(start_row, start_col), (start_row, start_col + size - 1)]  # Return the ship's start and end coordinates
-        
-        # Check if the ship can be placed vertically
-        elif orientation == 'V' and start_row + size <= len(board):
-            if all(board[row][start_col] == '~' for row in range(start_row, start_row + size)):
-                # Place the ship on the board
-                for row in range(start_row, start_row + size):
-                    board[row][start_col] = '#'  # Mark the ship's position
-                return [(start_row, start_col), (start_row + size - 1, start_col)]  # Return the ship's start and end coordinates
-        
-        # placement is invalid and prompt to try again
-        print("Invalid placement. Try again.")
+    valid_columns = [chr(ord('A') + i) for i in range(len(board))]
 
-def place_ship_randomly(board, size):
+    valid_rows = [str(i + 1) for i in range(len(board))]
 
-    while True:  # Continuously loop until the ship is placed correctly
-        row = random.randint(0, len(board) - 1)  # Randomly select a row
-        col = random.randint(0, len(board) - 1)  # Randomly select a column
-        orientation = random.choice(['H', 'V'])  # Randomly choose orientation (horizontal or vertical)
-        
-        # Check if the ship can be placed horizontally
-        if orientation == 'H' and col + size <= len(board):
-            if all(board[row][c] == '~' for c in range(col, col + size)):
+    
+
+    if manually:
+
+        while True:
+
+            display_board(board, show_all=True)
+
+            print(f"Placing ship (Size: {size})")
+
+            
+            # Get user input for starting row and column
+            start_row = int(get_valid_input(f"Enter the start row (1-{len(board)}): ", valid_rows)) - 1
+
+            start_col = ord(get_valid_input(f"Enter the start column (A-{valid_columns[-1]}): ", valid_columns)) - ord('A')
+
+            orientation = input("Enter orientation (H for horizontal, V for vertical): ").upper()
+
+            
+            # Check if the ship can be placed horizontally
+            if orientation == 'H' and start_col + size <= len(board):
+
+                if all(board[start_row][col] == '~' for col in range(start_col, start_col + size)):
                 # Place the ship on the board
-                for c in range(col, col + size):
-                    board[row][c] = '#'  # Mark the ship's position
-                return [(row, col), (row, col + size - 1)]  # Return the ship's start and end coordinates
+                    for col in range(start_col, start_col + size):
+
+                        board[start_row][col] = '#' # Mark the ship's position
+
+                    return [(start_row, start_col), (start_row, start_col + size - 1)] # Return the ship's start and end coordinates
+
         
-        # Check if the ship can be placed vertically
-        elif orientation == 'V' and row + size <= len(board):
-            if all(board[r][col] == '~' for r in range(row, row + size)):
+            # Check if the ship can be placed vertically
+            elif orientation == 'V' and start_row + size <= len(board):
+
+                if all(board[row][start_col] == '~' for row in range(start_row, start_row + size)):
+                    # Place the ship on the board
+                    for row in range(start_row, start_row + size):
+
+                        board[row][start_col] = '#' # Mark the ship's position
+
+                    return [(start_row, start_col), (start_row + size - 1, start_col)]  # Return the ship's start and end coordinates
+
+            
+            # placement is invalid and prompt to try again
+            print("Invalid placement. Try again.")
+
+    else:
+
+        while True: # Continuously loop until the ship is placed correctly
+
+            row = random.randint(0, len(board) - 1) # Randomly select a row
+
+            col = random.randint(0, len(board) - 1) # Randomly select a column
+
+            orientation = random.choice(['H', 'V']) # Randomly choose orientation (horizontal or vertical)
+
+            
+
+            if orientation == 'H' and col + size <= len(board):  # Check if the ship can be placed horizontally
                 # Place the ship on the board
-                for r in range(row, row + size):
-                    board[r][col] = '#'  # Mark the ship's position
-                return [(row, col), (row + size - 1, col)]  # Return the ship's start and end coordinates
+                if all(board[row][c] == '~' for c in range(col, col + size)):
+
+                    for c in range(col, col + size):
+
+                        board[row][c] = '#'  # Mark the ship's position
+
+                    return [(row, col), (row, col + size - 1)] # Return the ship's start and end coordinates
+        
+
+            
+            # Check if the ship can be placed vertically
+            elif orientation == 'V' and row + size <= len(board):
+
+                if all(board[r][col] == '~' for r in range(row, row + size)):
+                # Place the ship on the board
+                    for r in range(row, row + size):
+
+                        board[r][col] = '#' # Mark the ship's position
+
+                    return [(row, col), (row + size - 1, col)]  # Return the ship's start and end coordinates
+
+
+
+def take_turn(player, computer, is_player_turn):
+
+    board = player['board'] if is_player_turn else computer['board']
+
+    ship_positions = computer['ship_positions'] if is_player_turn else player['ship_positions']
+
+    guesses = player['guesses'] if is_player_turn else computer['guesses']
+
+    hits = player['hits'] if is_player_turn else computer['hits']
+
+
+
+    valid_columns = [chr(ord('A') + i) for i in range(len(board))]
+
+    valid_rows = [str(i + 1) for i in range(len(board))]
+
+
+
+    if is_player_turn:
+
+        row = int(get_valid_input(f"Enter the row (1-{len(board)}): ", valid_rows)) - 1
+
+        col = ord(get_valid_input(f"Enter the column (A-{valid_columns[-1]}): ", valid_columns)) - ord('A')
+
+    else:
+
+        row, col = random.randint(0, len(board) - 1), random.randint(0, len(board) - 1)
+
+        while (row, col) in guesses:
+
+            row, col = random.randint(0, len(board) - 1), random.randint(0, len(board) - 1)
+
+    
+
+    if (row, col) in guesses:
+
+        if is_player_turn:
+
+            print("You've already guessed that location. Try again.")
+
+        return hits
+
+    
+
+    guesses.append((row, col))
+
+    hit = False
+
+    
+
+    for i, (start, end) in enumerate(ship_positions):
+
+        if start[0] <= row <= end[0] and start[1] <= col <= end[1]:
+
+            hit = True
+
+            board[row][col] = 'X'
+
+            hits += 1
+
+            if is_player_turn:
+
+                print(Fore.GREEN + f"Hit at ({row+1}, {chr(col+ord('A'))})!" + Style.RESET_ALL)
+
+                if hits == sum(ship["size"] for ship in player['ships']):
+
+                    print(Fore.GREEN + "You sank all the enemy ships!" + Style.RESET_ALL)
+
+            else:
+
+                print(Fore.GREEN + f"The enemy hit your ship at ({row+1}, {chr(col+ord('A'))})!" + Style.RESET_ALL)
+
+                if hits == sum(ship["size"] for ship in computer['ships']):
+
+                    print(Fore.RED + "The enemy sank all your ships!" + Style.RESET_ALL)
+
+            break
+
+    
+
+    if not hit:
+
+        board[row][col] = 'O' # Mark the miss on the board
+
+        if is_player_turn:
+
+            print(Fore.RED + f"Miss at ({row+1}, {chr(col+ord('A'))})." + Style.RESET_ALL) # Inform user of the miss
+
+        else:
+
+            print(Fore.BLUE + f"The enemy missed at ({row+1}, {chr(col+ord('A'))})." + Style.RESET_ALL)
+
+    
+
+    return hits
+
+
+
+def main():
+
+    player = {
+
+        'board': initialize_board(),
+
+        'ship_positions': [], # List to store positions of ships placed by the computer
+
+        'guesses': [],  # List to store guesses made by the computer
+
+        'hits': 0,  # Counter for the number of hits the computer has made
+
+        'ships': [{'name': 'Battleship', 'size': 4}, {'name': 'Cruiser', 'size': 3}, {'name': 'Destroyer', 'size': 2}]
+
+    }
+
+
+
+    computer = {
+
+        'board': initialize_board(),
+
+        'ship_positions': [],  # List to store positions of ships placed by the computer
+
+        'guesses': [], # List to store guesses made by the computer
+
+        'hits': 0, # Counter for the number of hits the computer has made
+
+        'ships': [{'name': 'Battleship', 'size': 4}, {'name': 'Cruiser', 'size': 3}, {'name': 'Destroyer', 'size': 2}]
+
+    }
+
+
+
+    for ship in player['ships']:
+
+        player['ship_positions'].append(place_ship(player['board'], ship['size'], manually=True))# Add ship position to player's list
+
+    
+
+    for ship in computer['ships']:
+
+        computer['ship_positions'].append(place_ship(computer['board'], ship['size'], manually=False)) # Add ship position to computer's list
+    
+
+
+
+    game_loop(player, computer)
+
+
 
 def game_loop(player, computer):
 
-    turns = 0  # Initialize turn counter
-    max_turns = 100  # Max number of turns
-    
+    turns = 0
+
+    max_turns = 100
+
+
+
     while player['hits'] < sum(ship["size"] for ship in player['ships']) and computer['hits'] < sum(ship["size"] for ship in computer['ships']) and turns < max_turns:
+
         os.system('cls' if os.name == 'nt' else 'clear')
+
         
-        # Display the player's board with all ship positions
+
         print("Your board:")
+
         display_board(player['board'], show_all=True)
+
         
-        # Display the computer's board with hidden ship positions
+
         print("Enemy's board:")
+
         display_board(computer['board'])
+
         
-        # Get the user's guess for the next move
-        row = get_valid_input(f"Enter the row (1-{len(player['board'])}): ", 1, len(player['board'])) - 1
-        col = get_valid_input(f"Enter the column (1-{len(player['board'])}): ", 1, len(player['board'])) - 1
+
+        player['hits'] = take_turn(player, computer, True)
+
+        computer['hits'] = take_turn(computer, player, False)
+
         
-        # Check if the player's guess has already been made
-        if (row, col) in player['guesses']:
-            print("You've already guessed that location. Try again.")  # Notify user of repeated guess
-            continue  # Skip to the next iteration of the loop
-        
-        player['guesses'].append((row, col))  # Add the guess to the list of guesses
-        
-        # Check if the guess hit a ship
-        hit = False
-        for i, (start, end) in enumerate(computer['ship_positions']):
-            if (start[0] <= row <= end[0]) and (start[1] <= col <= end[1]):
-                hit = True  # Set hit flag to True
-                computer['board'][row][col] = 'X'  # Mark the hit on the board
-                player['hits'] += 1  # Increase the number of hits for the player
-                print(Fore.GREEN + f"Hit at ({row+1}, {col+1})!" + Style.RESET_ALL)  # Inform user of the hit
-                
-                # Check if the player has sunk all computer ships
-                if player['hits'] == sum(ship["size"] for ship in player['ships']):
-                    print(Fore.GREEN + "You sank all the enemy ships!" + Style.RESET_ALL)  # Notify user of victory
-                    break
-                elif player['hits'] == sum(ship["size"] for ship in computer['ships']):
-                    print(Fore.GREEN + f"You sank the {computer['ships'][i]['name']}!" + Style.RESET_ALL)  # Notify user of ship destruction
-                break
-        if not hit:
-            computer['board'][row][col] = 'O'  # Mark the miss on the board
-            print(Fore.RED + f"Miss at ({row+1}, {col+1})." + Style.RESET_ALL)  # Inform user of the miss
-        
-        # Get the computer's guess for the next move
-        row = random.randint(0, len(player['board']) - 1)
-        col = random.randint(0, len(player['board']) - 1)
-        while (row, col) in computer['guesses']:
-            row = random.randint(0, len(player['board']) - 1)  # Ensure computer does not guess already guessed location
-            col = random.randint(0, len(player['board']) - 1)
-        computer['guesses'].append((row, col))  # Add computer's guess to the list of guesses
-        
-        # Check if the computer's guess hit a ship
-        hit = False
-        for i, (start, end) in enumerate(player['ship_positions']):
-            if (start[0] <= row <= end[0]) and (start[1] <= col <= end[1]):
-                hit = True  # Set hit flag to True
-                player['board'][row][col] = 'X'  # Mark the hit on the board
-                computer['hits'] += 1  # Increase the number of hits for the computer
-                print(Fore.GREEN + f"The enemy hit your ship at ({row+1}, {col+1})!" + Style.RESET_ALL)  # Inform user of the hit
-                
-                # Check if the computer has sunk all player ships
-                if computer['hits'] == sum(ship["size"] for ship in computer['ships']):
-                    print(Fore.RED + "The enemy sank all your ships!" + Style.RESET_ALL)  # Notify user of defeat
-                    break
-                elif computer['hits'] == sum(ship["size"] for ship in player['ships']):
-                    print(Fore.RED + f"The enemy sank your {player['ships'][i]['name']}!" + Style.RESET_ALL)  # Notify user of ship destruction
-                break
-        if not hit:
-            player['board'][row][col] = 'O'  # Mark the miss on the board
-            print(Fore.BLUE + f"The enemy missed at ({row+1}, {col+1})." + Style.RESET_ALL)  # Inform user of the miss
-        
+
         turns += 1
+
         time.sleep(2)
+
     
-    # Print game results based on the outcome
+
     if player['hits'] == sum(ship["size"] for ship in player['ships']):
-        print(Fore.GREEN + "Congratulations, you won!" + Style.RESET_ALL)  # Player wins
+
+        print(Fore.GREEN + "Congratulations, you won!" + Style.RESET_ALL)
+
         print("""
+
                        .---.
                   ___ /_____\\
                  /\.-`( '.' )
@@ -614,11 +381,18 @@ def game_loop(player, computer):
                       L___l___J
                        |_ | _|
                       (___|___)
-                       ^^^ ^^^
-             """)  # Display win ASCII art
+                       ^^^ ^^^     
+
+                                                              
+
+             """)
+
     elif computer['hits'] == sum(ship["size"] for ship in computer['ships']):
-        print(Fore.RED + "You lost." + Style.RESET_ALL)  # Computer wins
+
+        print(Fore.RED + "You lost." + Style.RESET_ALL)
+
         print("""
+
                      .---.
                     /_____\\
                     ( '.' )
@@ -638,57 +412,31 @@ def game_loop(player, computer):
                    L___l___J
                     |_ | _|
                    (___|___)
-        """)  # Display loss ASCII art
+             """)
+
     else:
-        print(Fore.YELLOW + "The game ended in a draw." + Style.RESET_ALL)  # Game ends in a draw
+
+        print(Fore.YELLOW + "The game ended in a draw." + Style.RESET_ALL)
+
+
+
+if __name__ == "__main__":
+
+    main()
+
 
 
 colorama.deinit()
 
-if __name__ == "__main__":
-    # Define the size of the grid and ensure it is at least 10x10
-    grid_size = get_valid_input("Enter the size of the grid (minimum 10x10): ", 10, 100)
-    
-    # Define the ships with their names and sizes
-    ships = [
-        {"name": "Aircraft Carrier", "size": 5},
-        {"name": "Battleship", "size": 4},
-        {"name": "Submarine", "size": 3},
-        {"name": "Cruiser", "size": 3},
-        {"name": "Destroyer", "size": 2}
-    ]
-    
-    # Initialize player and computer boards with empty cells ('~')
-    player_board = [['~' for _ in range(grid_size)] for _ in range(grid_size)]
-    computer_board = [['~' for _ in range(grid_size)] for _ in range(grid_size)]
-    
-    # Initialize player and computer dictionaries with their respective boards, ships, and other attributes
-    player = {
-        "board": player_board,
-        "ships": ships,
-        "ship_positions": [],  # List to store positions of ships placed by the player
-        "guesses": [],  # List to store guesses made by the player
-        "hits": 0  # Counter for the number of hits the player has made
-    }
-    
-    computer = {
-        "board": computer_board,
-        "ships": ships,
-        "ship_positions": [],  # List to store positions of ships placed by the computer
-        "guesses": [],  # List to store guesses made by the computer
-        "hits": 0  # Counter for the number of hits the computer has made
-    }
-    
-    # Player names ships and places them manually on the board
-    for ship in ships:
-        ship["name"] = input(f"Enter a name for your {ship['name']} (Size: {ship['size']}): ")
-        ship_position = place_ship_manually(player_board, ship["name"], ship["size"])  # Place ship manually
-        player["ship_positions"].append(ship_position)  # Add ship position to player's list
-    
-    # Computer places ships randomly on the board
-    for ship in ships:
-        ship_position = place_ship_randomly(computer_board, ship["size"])  # Place ship randomly
-        computer["ship_positions"].append(ship_position)  # Add ship position to computer's list
-    
-    # Start the game loop to begin the gameplay
-    game_loop(player, computer)
+
+
+# This version incorporates the following changes: ✅
+ 
+# 1. **Dynamic 10x10 grid** initialized using a function. ✅
+
+# 2. **Data storage** for player and computer using dictionaries. ✅
+
+# 3. **Single functions** for each task, including guessing and printing. ✅
+
+# 4. **Use of ASCII** to convert letters to indices for column reference. ✅
+
